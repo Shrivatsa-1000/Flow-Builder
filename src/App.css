@@ -1,0 +1,170 @@
+/* Custom button styling */
+button {
+  border-radius: 8px;
+  border: 1px solid #0400f8;
+  color: #0400f8;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #c5c3c3;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: rgb(0, 0, 0); /* Change border color on hover */
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color; /* Add focus outline */
+}
+
+/* Media query for light color scheme */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547; /* Change text color */
+    background-color: #ffffff; /* Change background color */
+  }
+}
+
+/* Styling for selected nodes */
+.react-flow__node.selected {
+  border: solid 3px rgb(40, 61, 222); /* Add border to selected nodes */
+  border-radius: 7px; /* Border radius for selected nodes */
+}
+
+/* Rightbar styling */
+.appflow .rightbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #272727;
+  width: 30%;
+}
+
+.rightbar {
+  width: 20%;
+  max-width: 250px;
+}
+
+/* Styling for the topbar with save changes button */
+.savingChange {
+  font-size: 12px;
+  /* background: #fcfcfc; */
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #272727;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid grey;
+}
+
+/* Topbar styling */
+.topbar {
+  font-size: 12px;
+  background-color: #272727;
+  padding: 12px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  border-bottom: 2px solid grey;
+}
+
+/* Styling for updating the node */
+.update {
+  padding: 5px 15px;
+  font-size: 12px;
+  background: #fcfcfc;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+}
+
+.update .back {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Custom error message for clicking saveChanges button without selected node */
+.error {
+  color: #ff0000; /* Dark red text color */
+  background: #c8e6c9; /* Light green background color */
+  font-size: 20px; /* Font size */
+  border-radius: 8px; /*Rounded corners*/
+  padding: 12px 20px; /* Padding */
+  font-weight: bold; /* Bold text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Custom success message */
+.success {
+  color: #2e7d32; /* Dark green text color */
+  background: #c8e6c9; /* Light green background color */
+  font-size: 20px; /* Font size */
+  border-radius: 8px; /*Rounded corners*/
+  padding: 12px 20px; /* Padding */
+  font-weight: bold; /* Bold text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Sidebar styling */
+.appflow {
+  display: flex;
+  flex-grow: 1;
+  height: 50%;
+  flex-direction: row;
+}
+
+/* Styling for sidebar items */
+.appflow aside {
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #272727;
+  display: flex;
+}
+
+/* Description styling */
+.appflow .description {
+  margin: 10px;
+  font-size: 12px;
+}
+
+/* Styling for nodes */
+.appflow .appnode {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #c5c3c3;
+  border: 1px solid #0400f8;
+  color: #0400f8;
+  cursor: grab;
+  transition: border-color 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90px;
+}
+
+/* Node hover styling */
+.appnode:hover {
+  border-color: #646cff;
+}
+.appnode:focus,
+.appnode:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* React Flow wrapper styling */
+.appflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 89%;
+}
